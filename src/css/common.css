@@ -29,6 +29,7 @@ li{
   margin: 10px;
 border: 1px solid grey;
 border-radius: 10px;
+list-style: none;
 }
 
 body > p {
@@ -38,9 +39,27 @@ background-color: rgba(162, 48, 48, 0.308);
 border-radius: 10px;
 }
 
+p{
+padding: 10px;
+margin: 10px;
+outline: 1px dashed red;
+border-radius: 10px;
+}
 img {
   display: block;
   max-width: 100%;
+}
+
+.news{
+  max-width: 700px;
+outline: 2px solid rgb(206, 204, 204);
+padding: 10px;
+margin: 15px;
+border-radius: 10px;
+}
+
+.news:hover{
+box-shadow: #c0bbbb 3px 4px 12px;
 }
 
 .js-markup{
