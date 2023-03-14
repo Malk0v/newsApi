@@ -1,0 +1,32 @@
+{
+  "name": "test-fetch",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://Malk0v.github.io/testFetch",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /testFetch/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malk0v/testFetch.git"
+  },
+  "keywords": [],
+  "author": "Anton Malkov antonio.izym@gmai.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malk0v/testFetch/issues"
+  },
+  "dependencies": {
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-transformer-handlebars": "^1.0.0",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  }
+}
