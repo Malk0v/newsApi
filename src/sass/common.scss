@@ -12,7 +12,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #dfdede;
+  background-color: #dddddd76;
   color: #212121;
   line-height: 1.5;
 
@@ -50,16 +50,46 @@ img {
   max-width: 100%;
 }
 
+button{
+  width: 70px;
+  height: 30px;
+padding:1px 7px;
+align-items: center;
+color: #d8edc8;
+background-color: rgb(25, 5, 44);
+border: 0.3px solid rgb(70, 6, 6);
+border-radius: 4px;
+}
+
+.div-a-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-js{
+padding: 5px;
+margin: 10px;
+
+width: 30%;
+height: 30px;
+
+border-radius: 5px;
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px;
+}
+
 .news{
   max-width: 700px;
-outline: 2px solid rgb(206, 204, 204);
+outline: 2px solid rgb(255, 255, 255);
 padding: 10px;
 margin: 15px;
 border-radius: 10px;
 }
 
 .news:hover{
-box-shadow: #c0bbbb 3px 4px 12px;
+box-shadow: #b9b9b9 3px 4px 12px;
 }
 
 .js-markup{

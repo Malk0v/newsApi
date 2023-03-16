@@ -4,10 +4,11 @@
   "description": "",
   "homepage": "https://Malk0v.github.io/testFetch",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /testFetch/"
+    "build": "parcel build src/index.html --public-url /testFetch/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,12 +21,15 @@
     "url": "https://github.com/Malk0v/testFetch/issues"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
+    "modern-normalize": "^1.1.0",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
-    "parcel-transformer-handlebars": "^1.0.0",
-    "modern-normalize": "^1.1.0"
+    "parcel-transformer-handlebars": "^1.0.0"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.8.3",
+    "parcel-plugin-nuke-dist": "^1.0.1",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   }

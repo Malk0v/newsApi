@@ -17,10 +17,11 @@ function onSearch(e) {
       .then(data => {
         const headlines = data.articles
           .map(article => {
-            return `<div class="news">
-        <h2>Автор - ${article.author}</h2> 
-        <li>Название статьи <hr> ${article.title}</li> 
-        <li>${article.description}</li>
+              return `<div class="news">
+        <h2><span>Тема: </span>${article.title}</h2> 
+        <li>${article.description}
+        <hr>
+        Источник - ${article.author}</li>
         </div>`;
           })
           .join('');
